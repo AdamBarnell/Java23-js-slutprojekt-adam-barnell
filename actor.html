@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/Stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik+Mono+One&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <title>FilmoDB</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navBar">
+        <img src="./assets/FilmoDBFinalize.png" class="logoType" />
+        <a href="index.html" class="navBarButton"> Home </a>
+        <a href="actor.html" class="navBarButton"> Actors </a>
+        <a href="movie.html" class="navBarButton"> Movies </a>
+        <a href="guessingGame.html" class="navBarButton"> Guessing Game </a>
+      </div>
+    </nav>
+    <form id="searchFormActor" class="fetchMoviesButton-Container">
+      <input
+        type="text"
+        id="inputSearchActor"
+        placeholder="Input Actor"
+        class="fetchMoviesInput"
+      />
+      <button id="searchButtonActor" class="fetchMoviesButton">
+        Search for a actor
+      </button>
+    </form>
+    <div id="error" class="errorMessageCSS"></div>
+    <div id="moviesContainer"></div>
+    <footer>
+      <div class="footerDiv">
+        <p>@ FilmoDB by Adam Barnell</p>
+        <p>Phone: 071231412</p>
+        <p>Email: adam.barnell@gritacademy.se</p>
+      </div>
+    </footer>
+    <script type="module" src="/modules/main.js"></script>
+  </body>
+</html>

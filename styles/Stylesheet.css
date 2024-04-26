@@ -1,0 +1,278 @@
+body {
+  background-color: black;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: auto;
+  min-height: 70px;
+  background-color: black;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navBarButton {
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease-out;
+  margin: 20px;
+  padding: 10px;
+}
+
+.navBarButton:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.movie {
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  border: 3px solid #ccc;
+  display: inline-block;
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover {
+  transform: scale(1.1);
+  animation: movieColorChange 3s infinite;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+.movie h2 {
+  font-size: 20px;
+  color: #333;
+  max-height: 20px;
+}
+
+.movie p {
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+  padding-top: 25px;
+}
+.actor {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.actor img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+  transition: transform 0.3s ease-out;
+}
+
+.actor img:hover {
+  transform: scale(1.1);
+}
+
+.actor h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.actor p {
+  font-size: 14px;
+  color: #666;
+  padding-top: 5px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.actor-department {
+  font-size: 16px;
+  color: #444;
+  padding-top: 10px;
+  font-weight: bold;
+  margin: auto;
+}
+
+@keyframes movieColorChange {
+  0% {
+    border-color: rgb(255, 32, 78);
+  }
+  25% {
+    border-color: rgb(160, 21, 62);
+  }
+  50% {
+    border-color: rgb(93, 14, 65);
+  }
+  75% {
+    border-color: rgb(0, 34, 77);
+  }
+  100% {
+    border-color: red;
+  }
+}
+
+.fetchMoviesButton-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fetchMoviesButton {
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease-out;
+  padding: 15px;
+  margin: 15px;
+}
+
+.fetchMoviesButton:hover {
+  transform: scale(1.1);
+}
+
+.fetchMoviesInput {
+  border-radius: 15px;
+  background-color: white;
+  height: 25px;
+  width: 250px;
+  border-color: red;
+  border-width: 5px;
+}
+
+.fetchMoviesInput:focus {
+  animation: fetchInputColorChange 2s infinite;
+}
+
+@keyframes fetchInputColorChange {
+  0% {
+    border-color: rgb(255, 32, 78);
+  }
+  25% {
+    border-color: rgb(202, 37, 86);
+  }
+  50% {
+    border-color: rgb(190, 44, 139);
+  }
+  75% {
+    border-color: rgb(163, 35, 35);
+  }
+  100% {
+    border-color: red;
+  }
+}
+
+.logoType {
+  display: flex;
+  justify-content: left;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.movieDescription {
+  color: white;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.guessingForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.loremIpsum {
+  font-size: 10px;
+  color: white;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  justify-content: center;
+  padding: 10px;
+  line-height: 1.6;
+  width: 90%;
+}
+
+.logoIndex {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.divIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 6px;
+  border: 3px solid black;
+}
+
+.errorMessageCSS {
+  color: white;
+  font-size: 100px;
+}
