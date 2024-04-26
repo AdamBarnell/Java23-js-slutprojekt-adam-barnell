@@ -84,12 +84,10 @@ async function searchMovie(event) {
       displaySearchMovies(data.results);
     } else {
       console.log("No results found.");
-      document.getElementById("error").innerText = "Error something happened";
+      document.getElementById("error").innerText = "Invalid search";
     }
   } else {
-    console.error(
-      `Failed to fetch data: ${response.status} ${response.statusText}`
-    );
+    console.error(`${response.status} ${response.statusText}`);
   }
 }
 
