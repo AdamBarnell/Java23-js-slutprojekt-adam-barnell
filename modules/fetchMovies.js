@@ -14,6 +14,7 @@ async function getMovies(event) {
     } else {
       console.error(data);
       document.getElementById("error").innerText = "Invalid search";
+      document.getElementById("movieContainer").innerText = "";
     }
   } catch (error) {
     console.error(error);
@@ -45,7 +46,6 @@ async function getTopRatedMovies(event) {
 function displayMovies(movies) {
   const imageBaseUrl = "https://image.tmdb.org/t/p/w500";
   const container = document.getElementById("moviesContainer");
-
   container.innerHTML = "";
 
   for (const movie of movies) {
@@ -85,6 +85,7 @@ async function searchMovie(event) {
     } else {
       console.log("No results found.");
       document.getElementById("error").innerText = "Invalid search";
+      document.getElementById("moviesContainer").innerHTML = "";
     }
   } else {
     console.error(`${response.status} ${response.statusText}`);

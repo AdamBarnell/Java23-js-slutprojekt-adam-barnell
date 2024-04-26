@@ -15,6 +15,7 @@ async function searchActor(event) {
     } else {
       console.log("No results found.");
       document.getElementById("error").innerText = "Invalid search";
+      document.getElementById("moviesContainer").innerHTML = "";
     }
   } else {
     console.error(`${response.status} ${response.statusText}`);
