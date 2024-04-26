@@ -14,10 +14,11 @@ async function searchActor(event) {
       displaySearchActors(data.results);
     } else {
       console.log("No results found.");
-      document.getElementById("error").innerText = "Error something happened";
+      document.getElementById("error").innerText = "Invalid search";
     }
   } else {
     console.error(`${response.status} ${response.statusText}`);
+    document.getElementById("error").innerText = "Error something happened";
   }
 }
 

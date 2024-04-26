@@ -13,10 +13,11 @@ async function getMovies(event) {
       displayMovies(Top10PopularMovies);
     } else {
       console.error(data);
-      document.getElementById("error").innerText = "Error something happened";
+      document.getElementById("error").innerText = "Invalid search";
     }
   } catch (error) {
     console.error(error);
+    document.getElementById("error").innerText = "Error something happened";
   }
 }
 
@@ -33,10 +34,11 @@ async function getTopRatedMovies(event) {
       displayMovies(Top10TopRatedMovies);
     } else {
       console.error(data);
-      document.getElementById("error").innerText = "Error something happened";
+      document.getElementById("error").innerText = "Invalid search";
     }
   } catch (error) {
     console.error(error);
+    document.getElementById("error").innerText = "Error something happened";
   }
 }
 
